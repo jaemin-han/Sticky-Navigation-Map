@@ -1,0 +1,92 @@
+/*### REUSABLE LAYOUT CLASSES ###*/
+.clearfix::after { 
+	display: block; 
+	content:""; 
+	clear:both; 
+}
+/*### ANIMATIONS - set our animation properties/values for nav,a  ###*/
+nav, a { 
+	transition: all .5s ease-in-out;
+}
+
+/*### HEADER - set our background pic and it's position, along with height ###*/
+body header { 
+ height: 1000px;
+ background:url("https://static.pexels.com/photos/1440/city-road-street-buildings.jpg");
+background-size: cover;
+}
+
+/*### NAV - set background color and padding  ###*/
+
+header nav {  
+	position: fixed;
+	left: 0; 
+	right: 0;
+}
+
+/*### H1 - set font size and font color ###*/
+nav h1 { 
+	display: inline-block; 
+	font-size: 30px; 
+	color: white; 
+	line-height: 1.8; 
+}
+
+/*### UL - Float right ###*/
+nav ul { 
+	float: right;
+}
+
+/*### LI - Float left and define our HOVER state ###*/
+li { 
+	float: left;
+	 }
+
+li:hover {  
+	background-color:rgba(255, 255, 255, 0.2);  
+	cursor: pointer;
+}
+
+/*### A - set our padding and font color AND bind it to our ACTIVE class  ###*/
+li a { 
+	display: inline-block; 
+	padding: 20px 30px; 
+}
+
+li a.active {  
+	background-color:rgba(255, 255, 255, 0.2);
+}  
+
+/*### SECTION - set our height so that we have room to scroll ###*/
+section { height: 500px; 
+} 
+
+/*### LARGE CLASS - contain all the properties/values for the default state ###*/
+header nav.large { 
+	padding: 40px 30px; 
+	background-color: rgba( 0,0,0,0); 
+}
+
+nav.large ul { 
+	background-color: rgba( 255,255,255, 0.2)
+}
+
+nav.large li a { 
+	color: black;
+}
+/*### SMALL CALSS - contain all the properties/values for the transitioned state ###*/
+header nav.small {  
+	padding: 0px 100px; 
+	background-color: rgba( 103,176,209, 1); 
+}
+
+nav.small ul { 
+	background-color: rgba( 0,0,0, 0);
+}
+
+nav.small li a { 
+	color:white;
+}
+
+
+
